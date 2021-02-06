@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="canonical" href="https://mezcal.link" />
-    <meta name="google-site-verification" content="sdQ2VHrdDSGn1Ws8bO9W2MTKGOIQ2vnhfp0xRsK-CSI" />
+    <meta
+      name="google-site-verification"
+      content="sdQ2VHrdDSGn1Ws8bO9W2MTKGOIQ2vnhfp0xRsK-CSI"
+    />
     <meta
       name="description"
       content="The best mezcal links on the internet from Mezcal Reviews and Agaveholics"
@@ -221,6 +224,23 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
       }
+      a.button {
+        display: inline-block;
+        padding: 0.7em 1.4em;
+        margin: 0.5em 0;
+        border-radius: 0.15em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #20766b;
+        box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+        text-align: center;
+        position: relative;
+      }
+      a.button:active {
+        top: 0.1em;
+      }
       .display-flex {
         display: -webkit-flex;
         display: -moz-flex;
@@ -292,6 +312,11 @@
         margin: 16px;
         justify-content: space-around;
       }
+      .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+      }
       .sr-only {
         border: 0 !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
@@ -331,16 +356,18 @@
               <h1 class="bio-wrapper__name">Mezcal Reviews</h1>
             </header>
             <p class="bio-wrapper__description">
-              The best place to discover and review mezcal online.<br>Browse 1,000+
-              bottles 😎<br />
+              The best place to discover and review mezcal online.<br />Browse
+              1,000+ bottles 😎<br />
             </p>
           </main>
         </div>
       </div>
       <div>
-          <button>Read Mezcal Reviews</button>
-          <button>View the Blog</button>
-          <button>Buy Agave Shirts</button>
+        <div class="button-wrapper">
+          <a href="https://www.mezcalreviews.com/" class="button">Mezcal Reviews homepage</a>
+          <a href="https://www.mezcalreviews.com/blogs/" class="button">Latest Blog Posts</a>
+          <!-- <a href="#" class="button">Buy Agave Shirts</a> -->
+        </div>
       </div>
       <footer class="link-wrapper">
         <a
@@ -373,8 +400,8 @@
             >Visit the Twitter feed for Mezcal Reviews</span
           >
         </a>
-    </footer>
-    <p style="text-align: center;">Powered by 100% agave 🔥</p>
+      </footer>
+      <p style="text-align: center">Powered by 100% agave 🔥</p>
     </div>
   </body>
 </html>
